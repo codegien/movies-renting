@@ -43,7 +43,6 @@ function App() {
 				desc='Avengers End Game 2024 sit amet. Loren5 Lorem ipsum dolor sit amet.
 					Loren5 Lorem ipsum dolor sit amet. Loren5'
 			/> */}
-			{loading && <Loader />}
 			{loading ? (
 				// <h1>Loading....</h1>
 				<Loader />
