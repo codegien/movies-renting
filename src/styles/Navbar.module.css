@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .5vmin 1vmin;
+    background-color: rgba(24, 23, 23, 0.5);
+}
+
+nav> ul {
+    display: flex;
+    flex-direction: row;
+    min-width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+nav>ul>li {
+    margin: 0 .5vmin;
+}
+nav>ul>li>span {
+    display: flex;
+    flex-direction: row;
+}

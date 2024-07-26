@@ -4,6 +4,8 @@ import { MoviesData } from "./Data/moviedata";
 import axios from "axios";
 import Loader from "./component/Loader";
 import ErrorComponent from "./component/Error";
+import NavBar from "./component/NavBar";
+import "./App.css";
 
 const moviesDB =
 	"https://api.themoviedb.org/3/discover/movie?api_key=b2defd5282fbc07c195e2c67373704cb&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&release_date.gte=2020-01-01&release_date.lte=2023-12-31";
@@ -38,11 +40,6 @@ function App() {
 
 	return (
 		<>
-			{/* <Card
-				title='Avengers End Game'
-				desc='Avengers End Game 2024 sit amet. Loren5 Lorem ipsum dolor sit amet.
-					Loren5 Lorem ipsum dolor sit amet. Loren5'
-			/> */}
 			{loading ? (
 				// <h1>Loading....</h1>
 				<Loader />
@@ -55,13 +52,18 @@ function App() {
 						</>
 					) : (
 						<>
-							{moviesArray?.map((movie) => (
-								<Card
-									key={movie.id}
-									title={movie.title}
-									desc={movie.overview}
-								/>
-							))}
+							<header>
+								<NavBar />
+							</header>
+							<main>
+								{moviesArray?.map((movie) => (
+									<Card
+										key={movie.id}
+										title={movie.title}
+										desc={movie.overview}
+									/>
+								))}
+							</main>
 						</>
 					)}
 				</>
