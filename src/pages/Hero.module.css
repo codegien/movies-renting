@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    padding: 20px;
+    width: 100vw;
+   margin-top: 2vmin;
+   margin-bottom: 6vmin;
+}
+
+.title {
+    font-size: 8vmin;
+    font-weight: bold;
+    margin-bottom: 1vmin;
+}
+
+.paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    width: 50vw;
+}
+
+.scontainer {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+  
+    
+}
+
+.active {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        border: 1.5px solid #2784d6;
+        border-radius: 4px;
+        align-items: center;
+}

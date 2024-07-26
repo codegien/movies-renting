@@ -2,7 +2,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: .5vmin 1vmin;
+    padding: .5vmin 5vmin;
     background-color: rgba(24, 23, 23, 0.5);
 }
 
