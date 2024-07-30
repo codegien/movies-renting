@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Hero.module.css";
 import SearchIcon from "../component/icons/SearchIcon";
+import ThemeToggle from "../component/useState";
 
 const HeroPage = () => {
 	const [searchTerm, setSearchTerm] = useState("");
@@ -34,6 +35,8 @@ const HeroPage = () => {
 					}}
 				/>
 			</div>
+
+			<ThemeToggle />
 		</div>
 	);
 };
