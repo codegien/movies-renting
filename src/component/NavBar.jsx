@@ -12,7 +12,9 @@ function NavBar() {
 				<li>
 					<Link to='/'>Movies</Link>
 				</li>
-				<li>TV Shows</li>
+				<li>
+					<Link to='/tv-shows'>TV Shows</Link>
+				</li>
 				<li>
 					<span>
 						Suggest More

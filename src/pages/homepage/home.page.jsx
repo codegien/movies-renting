@@ -3,9 +3,8 @@ import Card from "../../Card";
 import axios from "axios";
 import Loader from "../../component/Loader";
 import ErrorComponent from "../../component/Error";
-import NavBar from "./component/NavBar";
-import "./App.css";
-import HeroPage from "./pages/HeroPage";
+import "../../App.css";
+import HeroPage from "../HeroPage";
 
 //old endpoints
 // const moviesDB =
@@ -13,7 +12,7 @@ import HeroPage from "./pages/HeroPage";
 
 const moviesDB = "https://moviebe-i5ue.onrender.com/api/v1/movies/get";
 
-function App() {
+function Home() {
 	const [moviesArray, setMoviesArray] = useState([]);
 	const [loading, setLoading] = useState(false);
 	const [errorMessage, setErrorMessage] = useState("");
@@ -74,9 +73,7 @@ function App() {
 						</>
 					) : (
 						<>
-							<header>
-								<NavBar />
-							</header>
+							<header>{/* <NavBar /> */}</header>
 							<HeroPage />
 							<form onSubmit={handleSearch}>
 								<input
@@ -104,4 +101,4 @@ function App() {
 		</>
 	);
 }
-export default App;
+export default Home;
