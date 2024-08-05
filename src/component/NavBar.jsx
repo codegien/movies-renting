@@ -16,10 +16,12 @@ function NavBar() {
 					<Link to='/tv-shows'>TV Shows</Link>
 				</li>
 				<li>
-					<span>
-						Suggest More
-						<Chevronright />
-					</span>
+					<Link to='/suggest-more'>
+						<span>
+							Suggest More
+							<Chevronright />
+						</span>
+					</Link>
 				</li>
 			</ul>
 		</nav>
