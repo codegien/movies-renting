@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Card from "./Card";
-import { MoviesData } from "./Data/moviedata";
+import Card from "../../Card";
 import axios from "axios";
-import Loader from "./component/Loader";
-import ErrorComponent from "./component/Error";
+import Loader from "../../component/Loader";
+import ErrorComponent from "../../component/Error";
 import NavBar from "./component/NavBar";
 import "./App.css";
 import HeroPage from "./pages/HeroPage";

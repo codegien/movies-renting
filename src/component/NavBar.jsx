@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../styles/Navbar.module.css";
 import Chevronright from "./icons/chevronright";
@@ -8,7 +9,9 @@ function NavBar() {
 		<nav>
 			<>Logo</>
 			<ul>
-				<li>Movies</li>
+				<li>
+					<Link to='/'>Movies</Link>
+				</li>
 				<li>TV Shows</li>
 				<li>
 					<span>

@@ -3,10 +3,10 @@ import "./App.css";
 import Button from "./component/Button";
 import Banner from "./component/Banner";
 
-function Card({ title, desc }) {
+function Card({ title, desc, imgUrl }) {
 	return (
 		<div className='card'>
-			<Banner />
+			<Banner imagePath={imgUrl} />
 			<div className='cardtext'>
 				{/* taking care of edge cases */}
 				{title ? <h1>{title}</h1> : <h1>Movie Title Here</h1>}
