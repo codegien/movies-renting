@@ -1,0 +1,66 @@
+.detailsbanner {
+    width: 80vw;
+    height: 60vh;
+    background-color: blue;
+    border-radius: 32px;
+    margin: 10vmin auto;
+    overflow: hidden;
+}
+
+.cover {
+    width: 100%;
+    height: auto;
+}
+.legendwrapper {
+
+    margin: 10px auto;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.legendwrapper > div {
+    flex: 1;
+    margin: 0 10px;
+}
+.poster {
+    background-color: aqua;
+    height: 80vh;
+    margin: 2vmin;
+    border-radius: 16px;
+    overflow: hidden;
+    /* background-image: url("./images/bann2.jpg"); */
+    background-position: center;
+    background-size: cover;
+}
+
+.posterimg {
+    width: 100%;
+    height: auto;
+}
+.details {
+    align-items: flex-start;
+    justify-content: left;
+    text-align: left;
+    padding: 0 4vmin;
+}
+
+.label {
+    font-size: small;
+}
+.value {
+    font-size: medium;
+    font-weight: bold;
+}
+.labelwrap {
+    margin: 4vmin 0;
+}
+
+@media only screen and (max-width: 600px){
+    .legendwrapper {
+        display: block;
+    }
+   
+}

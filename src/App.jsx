@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/homepage/home.page";
 import TVShows from "./pages/tvshows/tvshows.page";
 import SuggestMore from "./pages/suggestmore/suggestmore.page";
+import MoviesDetails from "./pages/moviedetail/moviedetail.page";
 import NavBar from "./component/NavBar";
 import ErrorComponent from "./component/Error";
 
@@ -24,6 +25,11 @@ function App() {
 				<Route
 					path='/suggest-more'
 					element={<SuggestMore />}
+					errorElement={<ErrorComponent />}
+				/>
+				<Route
+					path='/movie-details'
+					element={<MoviesDetails />}
 					errorElement={<ErrorComponent />}
 				/>
 			</Routes>

@@ -5,6 +5,7 @@ import Loader from "../../component/Loader";
 import ErrorComponent from "../../component/Error";
 import "../../App.css";
 import HeroPage from "../HeroPage";
+import { Link } from "react-router-dom";
 
 //old endpoints
 // const moviesDB =
@@ -91,6 +92,7 @@ function Home() {
 										title={movie.title}
 										desc={movie.overview}
 										imgUrl={movie.backdrop_path}
+										fullinfo={movie}
 									/>
 								))}
 							</main>

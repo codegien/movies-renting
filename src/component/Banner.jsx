@@ -1,4 +1,3 @@
-import React from "react";
 import bannerImage from "../assets/images/banner.jpg";
 import styles from "../styles/Banner.module.css";
 import { APIIMG_BASE_URL } from "../Data/config";
