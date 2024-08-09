@@ -1,0 +1,33 @@
+.authcontainer {
+
+    margin: 10px auto;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+.authcontainer>div {
+    flex: 1;
+    margin: 0 10px;
+}
+.authcontainer>div> form {
+    width: 90%;
+    text-align: left;
+
+}
+.authcontainer>div>form> div{
+    width: 80%;
+    margin: 2vmin;
+    background-color: black;
+}
+.authcontainer>div>form> div>span{
+    width: 30%;
+}
+
+.inputfield {
+    width: 70% ;
+    height: 4vmin;
+}

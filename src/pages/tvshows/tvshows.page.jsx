@@ -82,6 +82,7 @@ function TVShows() {
 										title={movie.title}
 										desc={movie.overview}
 										imgUrl={movie.backdrop_path}
+										fullinfo={movie}
 									/>
 								))}
 							</main>
